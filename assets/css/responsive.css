@@ -307,6 +307,10 @@
     .footer__copyright--left p:first-child {
         margin-bottom: 0.5rem;
     }
+
+    .toast-custom-offset {
+        top: 80px;
+    }
 }
 
 /* low resolution PC */
