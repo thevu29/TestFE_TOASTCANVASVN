@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/auth.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+</head>
+
+<body>
+    <div class="auth">
+        <header class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="navbar__brand">
+                        <a href="/index.html">What happened</a>
+                    </div>
+                    <div class="navbar__right">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">INTRODUCTION</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">SOLUTION</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">RATE PLAN</a>
+                            </li>
+                        </ul>
+                        <div class="navbar__separate"></div>
+                        <div class="navbar__auth">
+                            <a href="./login.html" class="navbar__login">LOGIN</a>
+                            <a href="./register.html" class="navbar__signup">APPLY FOR FREE USE</a>
+                        </div>
+                        <div class="navbar__menu mobile">
+                            <i class="fas fa-bars"></i>
+
+                            <div class="navbar-mobile">
+                                <span class="navbar-mobile__close"><i class="fa-solid fa-xmark"></i></span>
+                                <a href="/" class="navbar-mobile__header">What happened</a>
+                                <ul class="navbar-mobile__menu">
+                                    <li class="navbar-mobile__menu__item">
+                                        <span class="material-symbols-outlined">info</span>
+                                        <a href="#" class="navbar-mobile__menu__link">INTRODUCTION</a>
+                                    </li>
+                                    <li class="navbar-mobile__menu__item">
+                                        <span class="material-symbols-outlined">emoji_objects</span>
+                                        <a href="#" class="navbar-mobile__menu__link">SOLUTION</a>
+                                    </li>
+                                    <li class="navbar-mobile__menu__item">
+                                        <span class="material-symbols-outlined">note_alt</span>
+                                        <a href="#" class="navbar-mobile__menu__link">RATE PLAN</a>
+                                    </li>
+                                </ul>
+                                <div class="navbar-mobile__line"></div>
+                                <div class="navbar-mobile__auth">
+                                    <div class="navbar-mobile__auth__box">
+                                        <span class="material-symbols-outlined">login</span>
+                                        <a href="./login.html" class="nav-mobile__auth__link">LOGIN</a>
+                                    </div>
+                                    <div class="navbar-mobile__auth__box">
+                                        <span class="material-symbols-outlined">account_circle</span>
+                                        <a href="./register.html" class="nav-mobile__auth__link">APPLY FOR FREE USE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navbar-mobile__overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="auth__main">
+            <div class="auth__container">
+                <h1 class="auth__header">JOIN US</h1>
+                <div class="auth__line"></div>
+                <form action="#" class="auth__form register">
+                    <div class="form__box">
+                        <label class="form__label" for="email">아이디(이메일) *</label>
+                        <input type="text" class="form__control" placeholder="example@email.com" id="email">
+                    </div>
+                    <div class="form__box">
+                        <label class="form__label" for="password">비밀번호 *</label>
+                        <input type="password" class="form__control" placeholder="영문, 숫자, 특수문자를 포함한 8~12자리" id="password">
+                    </div>
+                    <div class="form__box">
+                        <label class="form__label" for="confirm-password">비밀번호 확인 *</label>
+                        <input type="password" class="form__control" id="confirm-password">
+                    </div>
+                    <div class="form__box">
+                        <label class="form__label" for="address">주소</label>
+                        <div style="position: relative;">
+                            <input type="text" class="form__control" id="address">
+                            <span class="search__address">검색</span>
+                        </div>
+                        <input type="text" class="form__control mt-2" id="additional-address" placeholder="추가 주소">
+                    </div>
+                    <div class="form__box">
+                        <label class="form__label" for="contact">연락처</label>
+                        <input type="text" class="form__control" id="contact">
+                    </div>
+                    <div class="auth__line"></div>
+                    <div class="auth__policy">
+                        <div class="d-flex align-items-center justify-content-end" style="font-size: 12px; gap: 4px; color: #000000;">
+                            <img src="./assets/images/checkbox-icon.png" style="width: 12px;">
+                            <a href="#" style="color: #0565bb;">이용약관</a>
+                            <span>및</span>
+                            <a href="#" style="color: #0565bb;">개인정보 처리 방침</a>
+                            <span>에 동의합니다. (필수)</span>
+                        </div>
+                        <div class="form__box text-end mt-2">
+                            <input type="checkbox" id="policy">
+                            <label for="policy">광고 및 메일 수신에 동의합니다. (선택)</label>
+                        </div>
+                    </div>
+                    <button class="btn__signup">가입하기</button>
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-4 col-sm-12 col-12">
+                            <div class="footer__box">
+                                <h5 class="footer__title">what happened</h5>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">[공지] 개인 정보 처리 방침 변경 사전 안내</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">[공지] 29CM 강남 스토어 영업 종료</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">[공지] 개인 정보 처리 방침 변경 사전 안내</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">[공지] iOS 10 이하 버전 지원 중단 안내</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">[공지] 개인 정보 처리 방침 변경 사전 안내</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-1-5 col-md-2 col-sm-6 col-12">
+                            <div class="footer__box">
+                                <h5 class="footer__title">about us</h5>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">회사 소개</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">인재 채용</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">상시 할인 혜택</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-1-5 col-md-2 col-sm-6 col-12">
+                            <div class="footer__box">
+                                <h5 class="footer__title">my order</h5>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">내 주문</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">주문 배송</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">취소 / 교환 / 반품 내역</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">상품 리뷰 내역</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">증빙 서류 발급</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-1-5 col-md-2 col-sm-6 col-12">
+                            <div class="footer__box">
+                                <h5 class="footer__title">my account</h5>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">회원 정보 수정</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">회원 등급</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">마일리지 현황</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">쿠폰</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-1-5 col-md-2 col-sm-6 col-12">
+                            <div class="footer__box">
+                                <h5 class="footer__title">help</h5>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">1 : 1 상담 내역</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">상품 Q & A 내역</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">공지 사항</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">자주하는 질문</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__item--link">고객의 소리</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="footer__copyright--left">
+                        <p>© 2020-2021 what happened corp  l  (주) 왓헤픈 ｜ 대표자 : 홍길동 ｜ 사업자 등록번호 : 356-00-00000 ㅣ test0101@what happened.co.kr</p>
+                        <p>서울특별시 강남구 도산대로 8길 17 ｜ FAX : 070-0000-0000  l  서비스 이용약관  l  개인정보처리방침</p>
+                    </div>
+                    <div class="footer__copyright--right">
+                        <a href="#" class="footer__social--link" title="Naver">
+                            <img src="./assets/images/naver-icon.png">
+                        </a>
+                        <a href="#" class="footer__social--link" title="Facebook">
+                            <img src="./assets/images/facebook-icon.png">
+                        </a>
+                        <a href="#" class="footer__social--link" title="Instagram">
+                            <img src="./assets/images/instagram-icon.png">  
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/auth.js"></script>
+</body>
+
+</html>

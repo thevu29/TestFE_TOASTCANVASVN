@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+img {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .col-2-4 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    .col-1-5 {
+        flex: 0 0 12.5%;
+        max-width: 12.5%;
+    }
+}
+
+.toast-custom-offset {
+    top: 100px;
+    right: 12px;
+}

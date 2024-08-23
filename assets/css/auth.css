@@ -1,0 +1,147 @@
+.form__box {
+    margin-bottom: 1.2rem;
+}
+
+.form__label {
+    color: #222222;
+    font-size: 1rem;
+    font-weight: 550;
+    margin-bottom: 6px;
+}
+
+.form__control {
+    display: block;
+    width: 100%;
+    padding: .525rem .9rem;
+    font-size: .8125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0f1114;
+    appearance: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: solid 1px #a1a1a1;
+    border-radius: 0;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form__control:focus {
+    box-shadow: none;
+    border-color: #000;
+    outline: 0;
+    color: #212529;
+    background-color: #fff;
+}
+
+.form__control.error {
+    border-color: #ff0000;
+}
+
+.form__control.error:focus {
+    box-shadow: none;
+    border-color: #ff0000;
+    outline: 0;
+    color: #212529;
+    background-color: #fff;
+}
+
+.form__control::placeholder {
+    color: #a1a1a1;
+}
+
+.auth__main {
+    padding: 60px 0;
+}
+
+.auth__container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.auth__header {
+    color: #0565bb;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.auth__line {
+    width: 100%;
+    height: 1.5px;
+    background-color: #222;
+    margin: 2rem 0;
+}
+
+.btn__login,
+.btn__signup {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0;
+    background-color: #0565bb;
+    color: #fff;
+    border: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .15), inset 0 1px 0 0 hsla(0, 0%, 100%, .1);
+    transition: background-color 0.2s ease 0s;
+}
+
+.login__other {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.login__sns--link {
+    color: #404142;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.login__social {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.login__social--link img {
+    width: 50px;
+}
+
+.login__signup {
+    margin-top: 1.5rem;
+}
+
+.login__signup--link {
+    padding: 10px 24px;
+    border: 1px solid #020001;
+    display: block;
+    text-align: center;
+}
+
+.login__signup--link:hover {
+    color: #0565bb;
+    border-color: #0565bb;
+}
+
+.login__forget {
+    margin-top: 1.5rem;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login__forget--link {
+    color: #1a58f2;
+    font-size: 0.875rem;
+}
+
+.search__address {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #659bf5;
+    cursor: pointer;
+    font-size: 0.75rem;
+}
