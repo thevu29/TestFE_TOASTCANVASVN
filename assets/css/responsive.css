@@ -1,6 +1,5 @@
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
-
     .navbar__list,
     .navbar__auth {
         gap: 1rem;
@@ -100,7 +99,6 @@
 
 /* Mobile */
 @media (max-width: 770px) {
-
     .navbar__list,
     .navbar__separate,
     .navbar__auth,
